@@ -1,0 +1,62 @@
+.input-size{
+	width:190px !important;
+	height:40px !important;
+	line-height:40px;
+	background-color: rgb(0,0,0,0.5);
+	font-family: 'Signika';
+
+}
+
+.add-on{
+	width:16px !important;
+	text-align:left !important;
+	background-color:#dcf0d0 !important;
+	line-height:30px !important;
+	height:30px !important;
+}
+
+.active_loads_row{
+	height: 80px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+.active > a{
+	background-color: #f5f5f5;
+}
+.my_loads table tr:first-child td:first-child { border-top-left-radius: 10px; }
+.my_loads table tr:first-child td:last-child { border-top-right-radius: 10px; }
+.my_loads table tr:last-child  td:first-child { border-bottom-left-radius: 10px; }
+.my_loads table tr:last-child  td:last-child { border-bottom-right-radius: 10px; }
+
+.form-control + .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid black;
+
+  }
+
+   .form-control + .tooltip > .tooltip-inner {
+      
+      font-family: 'Signika';
+      padding: 10px;
+      font-size:15px;
+      width: 250px
+  }
+
+  .footer_bar ul{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: 'Signika';
+ }
+ .infoblock{
+ 	display: block;
+ 	padding-top: 20px;
+
+
+ }
+ .footer_bar li a{
+ 	color:#FFFFFF;
+ 	font-family: 'Signika';
+ 	text-decoration: none;
+ }

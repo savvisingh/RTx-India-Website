@@ -1,0 +1,94 @@
+
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table.table-inn to not be like table.table-inns anymore */
+		table.table-inn, table.table-inn thead, table.table-inn tbody, table.table-inn th, table.table-inn td, table.table-inn tr { 
+			display: block;
+		}
+		
+
+		/* Hide table.table-inn headers (but not display: none;, for accessibility) */
+		table.table-inn thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		table.table-inn tr { border: 1px solid #ccc;
+		}
+		
+		table.table-inn td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%;
+			
+		}
+		
+		table.table-inn td:before { 
+			/* Now like a table.table-inn header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+
+		/*
+		Label the data
+		*/
+		table.table-inn td:nth-of-type(1):before { content: "No"; }
+		table.table-inn td:nth-of-type(2):before { content: "Type"; }
+		table.table-inn td:nth-of-type(3):before { content: "Details"; }
+		table.table-inn td:nth-of-type(4):before { content: "Date"; }
+		table.table-inn td:nth-of-type(5):before { content: "Status"; }
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		.table-small { 
+			padding: 0; 
+			margin: 0; 
+			width: 100%; }
+		}
+	tr {
+	margin-top:5px;
+	border-radius: 4px !important; 				
+		}
+		
+		tr th.search-tabs{
+	margin-top:-8px;
+	border-radius: 4px !important;
+	background-color:#f2f2f2;
+	text-align:center;
+	border:0 !important;				
+		}
+	.border-top{
+	border-top:1px solid #ccc; 
+	border-left:1px solid #ccc; 
+	border-right:1px solid #ccc;
+	background-color:#f2f2f2 !important;		
+	}
+	.border-bottom{
+	border-bottom:1px solid #ccc; 
+	border-left:1px solid #ccc; 
+	border-right:1px solid #ccc;		
+	}
+	.bottom{
+	border-bottom:1px solid #CCCCCC;
+	}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		.table-small { 
+			width: 100%;; 
+		}
+	}
